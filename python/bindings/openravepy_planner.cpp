@@ -22,6 +22,8 @@
 #include <openravepy/openravepy_collisionreport.h>
 #include <openravepy/openravepy_trajectorybase.h>
 #include <openravepy/openravepy_plannerbase.h>
+#include <boost/bind/bind.hpp> 
+using namespace boost::placeholders;
 
 namespace openravepy {
 

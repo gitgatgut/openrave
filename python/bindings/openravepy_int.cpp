@@ -14,6 +14,9 @@
 //
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#include <boost/bind/bind.hpp> 
+using namespace boost::placeholders;
+
 #include <openravepy/openravepy_int.h>
 
 #include <openrave/utils.h>

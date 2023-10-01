@@ -19,6 +19,8 @@
 #include <openravepy/openravepy_sensorbase.h>
 #include <openravepy/openravepy_environmentbase.h>
 #include <csignal>
+#include <boost/bind/bind.hpp> 
+using namespace boost::placeholders;
 
 #if defined(_WIN32) && !defined(sighandler_t)
 typedef void (*sighandler_t)(int);

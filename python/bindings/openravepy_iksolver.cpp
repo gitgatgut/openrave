@@ -20,6 +20,9 @@
 #include <openravepy/openravepy_iksolverbase.h>
 #include <openrave/utils.h>
 
+#include <boost/bind/bind.hpp> 
+using namespace boost::placeholders;
+
 namespace openravepy {
 
 using py::object;
