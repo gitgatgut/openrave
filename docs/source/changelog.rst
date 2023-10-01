@@ -3,9 +3,172 @@
 ChangeLog
 #########
 
+Version 0.130.0
+===============
 
-Version 0.9.0 Development
-=========================
+* Add KinBody::GetMass
+
+Version 0.129.1
+===============
+
+* Support 2**64-1 python integer to rapidjson.
+
+Version 0.129.0
+===============
+
+* Support readable interfaces for joints.
+
+Version 0.128.0
+===============
+
+* Extract the readable interface management into `ReadablesContainer`, and have both KinBody and Link derive from it.
+
+Version 0.126.0
+===============
+
+* Add :meth:`ExtractInfoOptions` to `KinBody.ExtractInfo` to allow getting an info without having the body be added to the environment.
+
+Version 0.125.0
+===============
+
+* Revert cylinder changes.
+* Add ConicalFrustum geometry.
+
+Version 0.124.1
+===============
+
+* Fix condition in GetCylinderRadius warning message.
+
+Version 0.124.0
+===============
+
+* Replace unit with UnitInfo object
+
+Version 0.123.1
+===============
+
+* Add backward compatibility to deserialize OpenRAVE::geometry::RaveOrientedBox<T>
+
+* Add "axial" geometry type.
+    
+Version 0.123.0
+===============
+
+* Add conical frustum geometry support (extending current cylinder).
+
+Version 0.122.1
+===============
+
+* Fix LoadJsonValue(rValue, std::vector<Transform>) not compiling
+
+Version 0.122.0
+===============
+
+* Add Reset function in IkParameterization
+
+Version 0.121.2
+===============
+
+* Remove leftover RemoveKinBody calls from EnvironmentBase::Read[xxx] functions
+
+Version 0.121.1
+===============
+
+* Improved message in openravejson.h
+
+Version 0.121.0
+===============
+
+* Add a modifiedAt field for KinBody and EnvironmentInfo that tracks the modifiedAt on the filename.
+
+Version 0.120.0
+===============
+
+* Add optional uri argument for LoadJSON
+* Add ReadRobotJSON and ReadKinBodyJSON
+
+Version 0.119.8
+===============
+
+* Remove RemoveKinBody calls from EnvironmentBase::Read[xxx] functions
+
+Version 0.119.7
+===============
+
+* Support loading kinbody data with a references chain of 3 layers or more.
+
+Version 0.119.6
+===============
+
+* Add excludeBodyId option to JSON reader
+
+Version 0.119.5
+===============
+
+* Instead of sampling and rejecting times, directly sample times in `ParabolicSmoother2`.
+
+Version 0.119.4
+===============
+
+* support std::vector<OpenRAVE::RaveVector<T>> serialization
+
+Version 0.119.3
+===============
+
+* Expose ConvertUnitScale to python
+
+Version 0.119.1
+===============
+
+* Fix not considering rotor inertia in inverse dynamics when velocity is 0
+
+Version 0.119.0
+===============
+
+* Add OpenRAVE units enums and helper functions
+
+Version 0.118.0
+===============
+
+* kinematics geometry dynamics hash cache is not properly invalidated when connected body active state cahnges
+
+Version 0.117.0
+===============
+
+* Add a command to toggle crop container margins visibility
+
+* Render crop container margins as colored boxes, add corresponding labels
+
+* Fix transparency rendering logic in OSG
+
+Version 0.116.0
+===============
+
+* Add GeomeryInfo::GetSideWallExists
+
+Version 0.115.1
+===============
+
+Python
+------
+
+* Add conversion python bindings override
+
+Version 0.115.0
+===============
+
+* Allow KinBody::Geometry.InitFromGeometries to be called with a vector of GeometryInfo objects.
+
+Version 0.114.1
+===============
+
+Core
+----
+
+* Allow updating of environment objects via JSON Reader (via `.Environment.DeserializeJSONWithMapping`) where only **name** specified, but not **id**.
+
+Version 0.9.0
+=============
 
 Git Commit: **Unreleased**
 
